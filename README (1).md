@@ -189,25 +189,6 @@ For a more reliable evaluation, split the original image records first, keeping 
 
 Also, the current notebook sets `TARGET_PER_CLASS = 6100` by repeating and truncating records; this is not the same as creating new, independent images. Describe it accurately in any manuscript.
 
-## Repository structure
-
-A suggested GitHub repository layout is:
-
-```text
-skin-lesion-classification/
-├── README.md
-├── notebooks/
-│   ├── resnet50.ipynb
-│   ├── vgg16.ipynb
-│   └── inceptionv3.ipynb
-├── results/
-│   ├── resnet50/
-│   ├── vgg16/
-│   └── inceptionv3/
-├── requirements.txt
-└── .gitignore
-```
-
 Adjust the notebook filenames to match the actual names in your repository. Only commit result files you intend to share. Trained model files and generated figures can be large; consider GitHub Releases or Git LFS for large artifacts.
 
 ## Citation
